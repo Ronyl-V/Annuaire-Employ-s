@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annuaire des Employés Orange</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+          <div class="hero-left">
+            <h1>Annuaire des <span class="highlight">Employés</span></h1>
+          </div>
+          <div class="hero-right">
+            <p>
+              L'annuaire des employés Orange est une application web intuitive permettant de centraliser,
+              visualiser et gérer les informations du personnel. Elle facilite l'ajout, la consultation et la suppression
+              des collaborateurs, tout en offrant une interface claire et moderne adaptée aux besoins.
+            </p>
+            <button class="btn-primary" id="getStartedBtn">Commencer</button>
+          </div>
+        </div>
+    </section>      
+
+    <section class="form-section">
+      <div class="form-card">
+        <div class="form-header">
+          <h2><span class="plus">+</span> Ajouter un employé</h2>
+        </div>
+  
+        <form id="employeeForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Entrez le nom" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Entrez le prénom" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="email@orange.com" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="poste">Poste/Fonction *</label>
+              <input type="text" id="poste" name="poste" placeholder="Entrez le poste" required />
+            </div>
+          </div>
+  
+          <button type="submit" class="submit-btn">Ajouter l'employé</button>
+        </form>
+      </div>
+  </section>
+    
+    <div class="container">
+        <div class="employees-section">
+            <div class="header">
+                <h2>Liste des employés</h2>
+                <div class="stats" id="employeeStats">
+                    <span class="employee-count">0 employé(s)</span>
+                </div>
+            </div>
+            
+            <div id="employeeList" class="employees-grid">
+              <div class="empty-state" id="emptyState">
+                  <div class="empty-icon">
+                      <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                          <circle cx="9" cy="7" r="4"/>
+                          <line x1="19" y1="8" x2="19" y2="14"/>
+                          <line x1="22" y1="11" x2="16" y2="11"/>
+                      </svg>
+                  </div>
+                  <h3>Aucun employé ajouté pour le moment.</h3>
+                  <p>Utilisez le formulaire ci-dessus pour ajouter des employés.</p>
+              </div>
+          </div>
+          
+          </div>
+
+          
+    </div>
+    
+  <footer>
+    <p>&copy; 2025 Orange - Annuaire des Employés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
